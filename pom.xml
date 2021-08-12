@@ -59,9 +59,9 @@
             <version>5.1.45</version>
         </dependency>
         <dependency>
-            <groupId>com.oracle</groupId>
-            <artifactId>ojdbc14</artifactId>
-            <version>1.0</version>
+            <groupId>com.github.noraui</groupId>
+            <artifactId>ojdbc7</artifactId>
+            <version>12.1.0.2</version>
         </dependency>
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
@@ -90,26 +90,32 @@
             <artifactId>mongo-java-driver</artifactId>
             <version>3.12.8</version>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.20</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
-    <!--发布-->
-    <distributionManagement>
-        <repository>
-            <id>abc</id>
-            <name>uc-db Project Release</name>
-            <url>http://maven.abc.com.cn/nexus/content/repositories/abc/</url>
-        </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>uc-db Project SNAPSHOT</name>
-            <url>http://maven.abc.com.cn/nexus/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-    <repositories>
-        <repository>
-            <id>elastic.co</id>
-            <url>https://artifacts.elastic.co/maven</url>
-        </repository>
-    </repositories>
+<!--    &lt;!&ndash;发布&ndash;&gt;-->
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>abc</id>-->
+<!--            <name>uc-db Project Release</name>-->
+<!--            <url>http://maven.abc.com.cn/nexus/content/repositories/abc/</url>-->
+<!--        </repository>-->
+<!--        <snapshotRepository>-->
+<!--            <id>snapshots</id>-->
+<!--            <name>uc-db Project SNAPSHOT</name>-->
+<!--            <url>http://maven.abc.com.cn/nexus/content/repositories/snapshots/</url>-->
+<!--        </snapshotRepository>-->
+<!--    </distributionManagement>-->
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>elastic.co</id>-->
+<!--            <url>https://artifacts.elastic.co/maven</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
     <build>
         <plugins>
             <plugin>
